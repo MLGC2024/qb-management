@@ -104,6 +104,8 @@ RegisterNetEvent('qb-bossmenu:server:FireEmployee', function(target)
 				TriggerEvent('qb-log:server:CreateLog', 'bossmenu', 'Job Fire', 'red', Player.PlayerData.charinfo.firstname .. ' ' .. Player.PlayerData.charinfo.lastname .. ' successfully fired ' .. Employee.PlayerData.charinfo.firstname .. ' ' .. Employee.PlayerData.charinfo.lastname .. ' (' .. Player.PlayerData.job.name .. ')', false)
 				TriggerClientEvent('QBCore:Notify', src, 'Employee fired!', 'success')
 				TriggerClientEvent('QBCore:Notify', Employee.PlayerData.source, 'You have been fired! Good luck.', 'error')
+				TriggerClientEvent('QBCore:Notify', src, "Employee fired!", "success") -- added by pamela for ps-multijob
+    			TriggerEvent('ps-multijob:server:removeJob', target) -- added by pamela for ps-multijob
 			else
 				TriggerClientEvent('QBCore:Notify', src, 'Error..', 'error')
 			end
