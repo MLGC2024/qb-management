@@ -17,9 +17,7 @@ Config.BossMenus = {
         vector3(894.96, -179.07, 74.7),
     },
     ['cardealer'] = {
-        vector3(-1249.77, -345.29, 37.33) -- Luxury
-    },
-    ['cardealer'] = {
+        vector3(-1249.07, -346.86, 37.34), -- Luxury
         vector3(-30.51, -1106.69, 26.42)  -- PDM
     },
     ['mechanic'] = {
